@@ -29,7 +29,6 @@ def interpreter_formule(formule):
     else:
         return lambda **kwargs: []
 
-@st.cache_data
 def charger_defauts_depuis_excel(path):
     try:
         df = pd.read_excel(path)
