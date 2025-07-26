@@ -50,7 +50,7 @@ def charger_defauts_depuis_excel(path):
         st.error(f"Erreur lors du chargement du fichier Excel : {e}")
         return []
 
-defauts = charger_defauts_depuis_excel("pannes moteurs.xlsx")
+defauts = charger_defauts_depuis_excel("pannes_moteurs.xlsx")
 
 fr = st.number_input("Fréquence de rotation (fr)", value=0.0)
 fs = st.number_input("Fréquence d'alimentation (fs)", value=0.0)
